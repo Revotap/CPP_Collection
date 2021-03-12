@@ -4,7 +4,6 @@
 */
 
 #include <string>
-#include <iostream>
 
 class MyString {
 private:
@@ -23,8 +22,6 @@ public:
 		else {
 			str = new char[strlen(val) + 1];
 			strcpy_s(str, strlen(val) + 1,val);
-
-			std::cout << "String: " << str << std::endl;
 		};
 	}
 	char operator [](int index) {
