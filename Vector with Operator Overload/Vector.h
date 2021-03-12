@@ -16,6 +16,7 @@ public:
 
 	Vector(double n_x, double n_y, double n_z) : x(n_x), y(n_y), z(n_z) {};
 
+	/*Overloading binary operator +*/
 	Vector operator + (const Vector &vector) {
 		Vector result(0, 0, 0);
 		result.x = this->x + vector.x;
@@ -24,6 +25,7 @@ public:
 		return result;
 	}
 
+	/*Overloading unary operator <<*/
 	friend ostream& operator <<(ostream& stream, const Vector &vector) {
 		stream << "(" << vector.x << ", " << vector.y << ", " << vector.z << ")";
 		return stream;
