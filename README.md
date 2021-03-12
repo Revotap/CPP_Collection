@@ -1,2 +1,2 @@
 # CPP_Collection
-Collection of universal cpp programms writen through time at university
+Collection of basic cpp programs written through time at university
